@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/form.css">
+
+<title>Cadastro</title>
+
+
+</head>
+<body>
+
+ 
+  <form action="salvar.php" method="POST"  enctype="multipart/form-data" required>
+    <div class="main-cadastro">
+      <div class="left-cadastro">
+        <h1>Faça o seu Cadastro<br> E entre para o nosso time escolar</h1>
+        <br>
+        <img src="./img/education-animate.svg" class="left-image-cadastro"> 
+      </div>
+      <div class="rigth-cadastro">
+        <div class="card-cadastro">
+           <h1>CADASTRO</h1>
+           <div class="textfield">
+              <label for="RM">RM</label>
+              <input type="text" id="rm" name="rm" placeholder="rm"required>
+           </div>
+           <div class="textfield">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="senha" required>
+           </div>
+           <div class="textfield">
+              <label for="email">Email</label>
+              <input type="email" id = "email" name="email" placeholder="exemplo@gmail.com">
+           </div>
+           <div class="textfield">
+            <label for="avatar">Escolha um avatar</label>
+            <input type="file" id="avatar" name="avatar" required accept="image/*">
+           </div>
+           <br>
+           <div class="textfield">
+             <select name="usuario" id="usuario">
+               <option value="Aluno">Aluno</option>
+               <option value="Professor">Professor</option>
+               <option value="Secretaria">Secretaria</option>
+             
+             </select>
+             <br>
+             <br>
+           <div>
+            <input type="submit" value="ENVIAR DADOS" type="button" class="btn-cadastro"> 
+           </div> 
+           
+        </div>  
+      </div>
+    </div>
+  </form>
+    
+    
+
+    
+         
+        
+        
+       
+        
+ 
+ 
+</body>
+</html>
